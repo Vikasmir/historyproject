@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Памятники Москвы и Подмосковья</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="image__container">
+        <h1 class="header__title">Прогулки по исторической Москве</h1>
+      </div>
+    </header>
+    <nav class="header__menu">
+      <ul class="header__minu-list">
+        <li class="menu-list_item">
+          <a class="item-link" href="#">Главная</a>
+        </li>
+        <li class="menu-list_item">
+          <a class="item-link" href="#map">Карта памятников</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      <a class="link-to_up" href="#"
+        ><img class="link-image" src="<%=require('./images/up.png')%>"
+      /></a>
+      <div class="content-wrapper">
+        <h2 class="content__title">Содержание</h2>
+        <ul class="list">
+        </ul>
+      </div>
+      <article class="article">
+        <h3 class="article__title">Подзаголовок главной страницы</h3>
+        <img
+          class="article__image"
+          alt="Подзаголовок главной страницы"
+          loading="lazy"
+        />
+        <p class="article__text">Описание главной страницы</p>
+      </article>
+      <ul class="monuments__list"></ul>
+      <iframe
+        class="google-maps"
+        src="https://www.google.com/maps/d/u/0/embed?mid=1xcc4GqfkvEAwljuRc3aZIfPyZvtMd4M&amp;ehbc=2E312F&amp;noprof=1"
+        id="map"
+      ></iframe>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Footer</p>
+    </footer>
+
+    <template id="list-template">
+      <li class="list-item">
+        <a class="list-item__link" href=""><span class="list-text"></span></a>
+      </li>
+    </template>
+
+    <template id="monument-template">
+      <li class="monument-item" id="">
+        <h4 class="monument-item__title"></h4>
+        <img class="monument-item__image" src="" alt="" />
+        <div class="text_container">
+          <p class="monument-item__text"></p>
+        </div>
+      </li>
+    </template>
+    <template id="list-template">
+      <li class="list-item">
+        <a class="list-item__link" href="">
+          <span class="list-text"></span>
+        </a>
+      </li>
+    </template>
+  </body>
+</html>

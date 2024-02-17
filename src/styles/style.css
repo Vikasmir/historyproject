@@ -1,0 +1,216 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  min-inline-size: 320px;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background-color: #ececec;
+  font-variation-settings: 'wght' 400;
+}
+
+.header {
+  inline-size: 100%;
+}
+
+.image__container {
+  min-block-size: 300px;
+  background-image: url('../images/header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__title {
+  padding: 10px;
+  color: #fff;
+  font-size: 40px;
+  text-shadow: -1px -1px #2e2e2e, -1px 1px #2e2e2e, 1px -1px #2e2e2e,
+    1px 1px #2e2e2e;
+}
+
+.header__menu {
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+  -webkit-box-shadow: 0 2px 2px #fff;
+  box-shadow: 0 2px 2px #fff;
+  background-color: #fff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.header__minu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  gap: 5px;
+  inline-size: min(100%, 1180px);
+  margin-block: 5px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.menu-list_item {
+  border-inline: 1px solid #fff;
+  padding-block: 10px;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s linear, border 0.2s linear;
+  transition: opacity 0.2s linear, border 0.2s linear;
+}
+
+.menu-list_item:hover {
+  border-inline: 1px solid #00000060;
+  opacity: 0.7;
+}
+
+.item-link {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.link-to_up {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.link-image {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: block;
+  inline-size: 70px;
+  block-size: 70px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+.link-image:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: repeat(3, -webkit-min-content);
+  grid-template-rows: repeat(3, min-content);
+  gap: 10px;
+  inline-size: min(100%, 1180px);
+  margin-block: 20px;
+}
+
+.content-wrapper {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.content__title {
+  font-size: 20px;
+  -webkit-margin-start: 5px;
+  font-variation-settings: 'wght' 700;
+}
+
+.list {
+  min-inline-size: 300px;
+  margin-block-start: 10px;
+  -webkit-margin-before: 10px;
+}
+
+.list-item {
+  border-block: 1px solid #00000018;
+  padding: 5px 5px;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.list-item:hover {
+  border-block: 1px solid #000;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  font-variation-settings: 'wght' 600;
+}
+
+.list-item__link {
+  display: block;
+}
+
+.article {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.article__image {
+  display: block;
+  inline-size: min(100%, 600px);
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.monuments__list {
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.monument-item {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  -webkit-padding-before: 60px;
+  scroll-margin-top: 4rem;
+}
+
+.monument-item__title {
+  margin-block: 10px;
+  font-size: 24px;
+  font-variation-settings: 'wght' 600;
+}
+
+.monument-item__image {
+  display: block;
+  inline-size: min(100%, 1000px);
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.monument-item__text {
+  padding-block-start: 10px;
+  -webkit-padding-before: 10px;
+}
+
+.google-maps {
+  grid-column: span 2;
+  grid-row: 3 / span 1;
+  inline-size: 100%;
+  block-size: 720px;
+}
