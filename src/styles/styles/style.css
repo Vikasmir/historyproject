@@ -139,9 +139,15 @@
 }
 
 .list-item:hover {
-  border-block: 1px solid #000;
-  transform: scale(1.05);
   font-variation-settings: 'wght' 600;
+}
+
+@media not screen and (width < 720px) {
+  .list-item:hover {
+    border-block: 1px solid #000;
+    transform: scale(1.05);
+    font-variation-settings: 'wght' 600;
+  }
 }
 
 .list-item__link {
@@ -231,10 +237,8 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-    width: auto;
     max-width: 75vw;
-    height: auto;
-    max-height: 80vh;
+    max-height: 500px;
     overflow-y: scroll;
     transition: visibility 0s, opacity 0.6s;
   }

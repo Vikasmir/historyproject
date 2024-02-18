@@ -116,6 +116,10 @@ document.addEventListener('mousedown', mouseHandler);
 menuButton.addEventListener('click', () => {
   handleShowPopup(popupWrapper);
 });
-listContainer.addEventListener('click', () => {
-  handleClosePopup(popupWrapper);
+listContainer.addEventListener('click', (evt) => {
+  if (
+    evt.target.classList.contains('list-item__link') ||
+    evt.target.classList.contains('list-text')
+  )
+    handleClosePopup(popupWrapper);
 });

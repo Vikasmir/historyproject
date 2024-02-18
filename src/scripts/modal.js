@@ -16,7 +16,6 @@ function keyHandler(evt) {
 }
 
 function mouseHandler(evt) {
-  console.log(evt.target);
   if (evt.target.classList.contains('popup_is-opened')) {
     handleClosePopup(evt.target);
   }
