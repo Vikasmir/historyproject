@@ -1,17 +1,24 @@
 .menu__button {
-  width: 35px;
+  width: 52px;
   height: 35px;
-  margin: 0;
+  margin-inline: 10px;
   border: none;
   padding: 0;
   opacity: 0;
-  background: transparent url('../../../images/menu__button.png') center
-    no-repeat;
-  background-size: 35px 35px;
+  background: url('../../../images/menu__button.png') center no-repeat;
+  background-size: 52px 35px;
   transition: visibility 0s, opacity 0.3s;
   pointer-events: none;
 }
 
 .menu__button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 720px) {
+  .menu__button {
+    opacity: 0.5;
+    cursor: pointer;
+    pointer-events: all;
+  }
 }

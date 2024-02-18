@@ -147,17 +147,17 @@ export const monuments = [
     name: 'Царь-колокол',
     url: '10',
     src: './images/10.jpg',
-    description: `Адрес: Царь-колокол, Боровицкая улица, Тверской район, Москва, Центральный федеральный округ, 103073, Россия
-    /Широта: 55.750767
-    /Долгота: 37.618437
-    /Основная информация:
-    /Создатели – Иван и Михаил Моторины
-    /Построен в 1735 году
-    /Интересные факты:
-    /Ни разу не звонил.
-    /100 лет Царь-колокол провел под землёй, пока Огюст Монферран в 1836 году не спроектировал постамент для него. 
-    /В августе 1919 года Белая армия начала эмиссию собственных денег. На тысячной купюре был изображен Царь-колокол, поэтому в народе деньги прозвали «колокольчиками».
-    /При Троицком пожаре люди решили поливать колокол водой, чтобы тот не расплавился, однако он не выдержал перепада температур, и от него откололся кусок. По другой версии, скол произошел из-за нарушения технологии.
+    description: `Address: Tsar Bell, Borovitskaya Street, Tverskoy District, Moscow, Central Federal District, 103073, Russia
+    /Latitude: 55.750767
+    /Longitude: 37.618437
+    /Basic information:
+    /The founders were Ivan and Mikhail Motorin
+    /It was built in 1735
+    /Interesting facts:
+    /Never rang once.
+    /The Tsar Bell spent 100 years underground until Auguste Montferrand designed a pedestal for it in 1836. 
+    /In August 1919, the White Army began issuing its own money. On the thousand-dollar bill was depicted the Tsar Bell so the people nicknamed the money «bells».
+    /At the Trinity fire people decided to pour water on the bell to prevent it from melting but it could not withstand the temperature difference and a piece of it broke off. According to another version, the chipping occurred due to a violation of technology.
     `,
   },
   {

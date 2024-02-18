@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Памятники Москвы и Подмосковья</title>
+    <title>Прогулки по исторической Москве</title>
   </head>
   <body class="page">
     <header class="header">
@@ -26,9 +26,11 @@
       <a class="link-to_up" href="#"
         ><img class="link-image" src="<%=require('./images/up.png')%>"
       /></a>
-      <div class="content-wrapper">
-        <h2 class="content__title">Содержание</h2>
-        <ul class="list"></ul>
+      <div class="popup-wrapper popup_is-animated">
+        <div class="content-wrapper">
+          <h2 class="content__title">Содержание</h2>
+          <ul class="list"></ul>
+        </div>
       </div>
       <article class="article">
         <p class="article__text">
@@ -60,7 +62,9 @@
 
     <template id="list-template">
       <li class="list-item">
-        <a class="list-item__link" href=""><span class="list-text"></span></a>
+        <a class="list-item__link" href="">
+          <span class="list-text"></span>
+        </a>
       </li>
     </template>
 
@@ -71,13 +75,6 @@
         <div class="text_container">
           <p class="monument-item__text"></p>
         </div>
-      </li>
-    </template>
-    <template id="list-template">
-      <li class="list-item">
-        <a class="list-item__link" href="">
-          <span class="list-text"></span>
-        </a>
       </li>
     </template>
   </body>

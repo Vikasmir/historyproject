@@ -1,0 +1,7 @@
+@import url('../fonts/fonts.css');
+@import url('./styles/globals.css');
+@import url('./styles/style.css');
+@import url('./popup/popup.css');
+@import url('./menu/__button/menu__button.css');
+@import url('./popup/_is-animated/popup_is-animated.css');
+@import url('./popup/_is-opened/popup_is-opened.css');

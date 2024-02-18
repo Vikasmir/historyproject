@@ -1,6 +1,5 @@
-import './fonts/fonts.css';
-import './styles/globals.css';
-import './styles/style.css';
+// import './fonts/fonts.css';
+import './styles/index.css';
 
 import { monuments } from './scripts/monuments.js';
 import { list } from './scripts/menu-list.js';
@@ -21,6 +20,9 @@ const popupImage = document.querySelector('.popup_type_image');
 const image = popupImage.querySelector('.popup__image');
 const imageСaption = popupImage.querySelector('.popup__caption');
 const closePopupButton = popupImage.querySelector('.popup__close');
+
+const menuButton = document.querySelector('.menu__button');
+const popupWrapper = document.querySelector('.popup-wrapper');
 
 function handleClickImage(evt) {
   image.src = evt.target.src;
@@ -111,3 +113,9 @@ function showButton() {
 
 document.addEventListener('scroll', showButton);
 document.addEventListener('mousedown', mouseHandler);
+menuButton.addEventListener('click', () => {
+  handleShowPopup(popupWrapper);
+});
+listContainer.addEventListener('click', () => {
+  handleClosePopup(popupWrapper);
+});
