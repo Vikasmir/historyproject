@@ -4,6 +4,11 @@ import './styles/style.css';
 
 import { monuments } from './scripts/monuments.js';
 import { list } from './scripts/menu-list.js';
+import {
+  handleShowPopup,
+  handleClosePopup,
+  mouseHandler,
+} from './scripts/modal.js';
 
 const toUpButton = document.querySelector('.link-to_up');
 const monumentTemplate = document.querySelector('#monument-template').content;
@@ -11,6 +16,23 @@ const monumentContainer = document.querySelector('.monuments__list');
 
 const listTemplate = document.querySelector('#list-template').content;
 const listContainer = document.querySelector('.list');
+
+const popupImage = document.querySelector('.popup_type_image');
+const image = popupImage.querySelector('.popup__image');
+const imageСaption = popupImage.querySelector('.popup__caption');
+const closePopupButton = popupImage.querySelector('.popup__close');
+
+function handleClickImage(evt) {
+  image.src = evt.target.src;
+  image.alt = evt.target.alt;
+  imageСaption.textContent = evt.target.alt;
+  handleShowPopup(popupImage);
+}
+
+closePopupButton.addEventListener('click', (evt) => {
+  const popup = evt.target.closest('.popup');
+  handleClosePopup(popup);
+});
 
 function getMonumentTemplate() {
   const cloneTemplateMonument = monumentTemplate
@@ -36,6 +58,8 @@ function createMonument(monument) {
     paragraph.textContent = item;
     return textContainer.append(paragraph);
   });
+
+  monumentImage.addEventListener('click', handleClickImage);
 
   return monumentItem;
 }
@@ -79,8 +103,6 @@ const Initial = (monuments, list) => {
 
 Initial(monuments, list);
 
-// let posTop = window.pageYOffset;
-
 function showButton() {
   window.scrollY > 300
     ? toUpButton.classList.add('visible')
@@ -88,3 +110,4 @@ function showButton() {
 }
 
 document.addEventListener('scroll', showButton);
+document.addEventListener('mousedown', mouseHandler);

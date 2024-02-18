@@ -1,0 +1,17 @@
+.menu__button {
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  border: none;
+  padding: 0;
+  opacity: 0;
+  background: transparent url('../../../images/menu__button.png') center
+    no-repeat;
+  background-size: 35px 35px;
+  transition: visibility 0s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.menu__button:hover {
+  opacity: 0.9;
+}

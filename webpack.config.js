@@ -1,6 +1,7 @@
 const path = require('path'); // подключаем path к конфигу вебпак
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -53,6 +54,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(), // подключение плагина для объединения файлов
+    new CopyWebpackPlugin({
+      patterns: [{ from: './src/images', to: 'images' }],
+    }),
   ],
 };
 
